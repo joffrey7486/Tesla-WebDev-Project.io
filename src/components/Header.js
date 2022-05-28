@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/styles/Header.scss';
+import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = ({ isMenuOpen, setIsMenuOpen }) => {
     return (
@@ -26,7 +28,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
                 <Link to='/'>Shop</Link>
                 <Link to='/login'>Tesla Account</Link>
                 <div className="header__menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-
+                    {isMenuOpen ? <CloseIcon/> : <MenuIcon/>}
                 </div>
             </div>
         </div>

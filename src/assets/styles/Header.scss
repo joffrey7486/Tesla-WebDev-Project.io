@@ -18,4 +18,31 @@
             margin-right: 100px;
         }
     }
+
+    .header__links{
+        display: flex;
+        gap: 15px;
+
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            font-weight: 500;
+            font-size: 15px;
+        }
+    }
+
+    .header__right{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            font-weight: 500;
+            font-size: 15px;
+        }
+    }
 }
