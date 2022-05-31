@@ -1,0 +1,24 @@
+import React from 'react';
+import "../assets/styles/HeaderBlock.scss"
+
+const HeaderBlock = () => {
+    return (
+        <div className='headerBlock'>
+            <div className="headerBlock__info">
+                <div className="headerBlock__infoText">
+                    <h1>Model 3</h1>
+                    <h4>
+                        Order Online for <span>Touchless Delivery</span>
+                    </h4>
+                </div>
+
+                <div className="headerBlock__actions">
+                    <button className='headerBlock__buttonPrimary'>custom</button>
+                    <button className='headerBlock__buttonSecondary'>existing investory</button>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default HeaderBlock;
